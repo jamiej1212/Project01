@@ -1,7 +1,8 @@
-package projt01;
-/**
- * This class gets and sets the given information
- */
+package proj01;
+/**************************************************************
+ * AddressEntry
+ * Sets and gets the given information
+ *************************************************************/
 public class AddressEntry
 {
     private String firstName;
@@ -15,7 +16,7 @@ public class AddressEntry
 
 
     /**
-     * Initialize all the variables so that we can make sure
+     * Initializes all the variables so that we can make sure
      * the program is deterministic.
      */
     public AddressEntry()
@@ -30,7 +31,7 @@ public class AddressEntry
         email = "";
     }
     /**
-     * Create an address Book with given information
+     * Creates an address Book with given information
      * this is used to point to the current variable declared in the class
      * @param firstName First names that we want to add
      * @param lastName last names that we want to add
@@ -70,6 +71,7 @@ public class AddressEntry
     {
         return firstName;
     }
+
     /**
      * Sets Last name
      * @param lastName Last name of a person in the address book
@@ -78,6 +80,7 @@ public class AddressEntry
     {
         this.lastName = lastName;
     }
+
     /**
      * Gets Last name
      * @return to last name after getting last name
