@@ -1,45 +1,25 @@
-package projt01;
+package proj01;
 
 import java.io.*;
 import java.util.Scanner;
 
-/** main AddressBookApplication: purpose is to invoke some methods
- * of the Menu classes
- **/
+
+/**************************************************************
+ * main : AddressBookApplication
+ * Invokes methods from other classes
+ *************************************************************/
 class AddressBookApplication
 {
-    /**3
-     * Main method that calls prompts from Menu class
+    /**
+     *Main method
+     * Creates an instance of AddressBook then use it to
+     * call menu prompt in Menu class
+     *
      * @param args contains the supplied command line arguments
      */
-    public static void main(String args[]) throws IOException {
-        Menu.menu();
-
-
-
+    public static void main(String args[]) throws IOException
+    {
+        AddressBook book = new AddressBook();
+        Menu.menu(book);
     }
-    /**
-     * Builds two instances so that we can add info getting from the class AddressEntry
-     * and then add them to the Address Book
-     * @param ab Address collection that we are going to store information
-     */
-    /**
-     static void initAddressBookExercise(AddressBook ab)
-     {
-     AddressEntry ae1 = new AddressEntry(first, last, street, city, state, zip, email, phone);
-     ab.add(ae1);
-     //ab.list();
-
-     }
-     */
-
-
-    /**
-     * Gets input from a file and then store the information
-     * @param info information provided from txt file
-     * @throws IOException
-     */
-
-
-
 }
