@@ -24,6 +24,7 @@ public class AddressBook
      */
     public void add(AddressEntry entry)
     {
+        //pass list from Menu
         entry.setFirstName(menu.prompt_FirstName());
         entry.setLastName(menu.prompt_LastName());
         entry.setStreet(menu.prompt_Street());
